@@ -1,0 +1,39 @@
+*
+{
+    padding: 0;
+    margins: 0;
+}
+body
+{
+    background-image: url(background2.png);
+    background-size: cover;
+    background-position: center;
+    font-family: courier, monospace;
+    color: yellow;
+    font-size: 2vw;
+}
+.text
+{
+    position: fixed;
+}
+.profile
+{
+    width: 20vw;
+    height: 20vw;
+    background: url(profile.jpg);
+    background-size: contain;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 1vw;
+}
+.text1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 60vh;
+    content:url(text1.png)
+}
