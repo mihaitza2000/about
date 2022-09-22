@@ -23,7 +23,7 @@ function writer()
         text = strength;
         audio.src = "description.mp3";
         audio.play();
-        document.getElementById("button_content").innerHTML = "My weakness";
+        document.getElementById("button_content").innerHTML = "My weaknesses";
     }
     else if(i == 3)
     {
