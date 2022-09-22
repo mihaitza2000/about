@@ -10,7 +10,7 @@ body
     background-position: center;
     font-family: courier, monospace;
     color: yellow;
-    font-size: 2vw;
+    font-size: max(3vw, 3vh);
 }
 .text
 {
@@ -18,8 +18,8 @@ body
 }
 .profile
 {
-    width: 20vw;
-    height: 20vw;
+    width: min(20vw, 20vh);
+    height: min(20vw, 20vh);
     background: url(profile.jpg);
     background-size: contain;
     border-radius: 50%;
@@ -34,6 +34,39 @@ body
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
-    height: 60vh;
-    content:url(text1.png)
+    height: min(60vh, 60vw);
+    content:url(text1.png);
+    visibility: hidden;
+}
+.text2
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: min(60vh, 60vw);
+    content:url(text2.png);
+    visibility: hidden;
+}
+.content
+{
+    position: absolute;
+    display: inline-box;
+    top: 92vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: min(20vh, 20vw);
+    height: min(8vh, 8vw);
+    border-radius: 20vw;
+}
+.button_sound, .icon_sound
+{
+    position: fixed;
+    margin: auto;
+    bottom: min(1vh, 1vw);
+    right: min(1vh, 1vw);
+    width: min(10vh, 10vw);
+    height: min(10vh, 10vw);
+    float: left;
 }

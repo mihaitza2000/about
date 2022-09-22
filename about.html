@@ -8,12 +8,20 @@
     <body>
         <div class="text">
             <div class="profile"></div>
-            <button onclick="writer()">
-                    Find more
+            <button onclick="change_sound()" class="button_sound">
+                <img class="icon_sound" src="speaker.png" id="speaker">
             </button>
+            <div class="button">
+                <button onclick="writer()" class="content">
+                    <div id="button_content">
+                        Who I am
+                    </div>
+                </button>
+            </div>
             <p id="button"></p>
             <script src="button.js"></script>
         </div>
-        <div class="text1"></div>
+        <div class="text1" id="text1"></div>
+        <div class="text2" id="text2"></div>
     </body>
 </html>
